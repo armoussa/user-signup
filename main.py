@@ -29,10 +29,10 @@ def signup():
         user_error = "Please enter a valid username."
     elif len(username) < 3 or len(username) > 20:
         user_error = "Username invalid. Please enter a username between 3 and 20 characters."
-        #username = ""
+        
     elif " " in username:
         user_error = "Username invalid. Username cannot contain spaces."
-        username = ""
+        
     
     if password == "":
         pass_error = "Please enter a valid password."
